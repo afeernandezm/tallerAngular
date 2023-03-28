@@ -1,0 +1,15 @@
+<div class="alert alert-warning" role="alert" *ngIf="showAlert">
+  Pieza eliminada correctamente.
+</div>
+<mat-card
+  style="background-color: bisque; border-radius: 10px"
+  class="g-3 p-3 mt-3"
+>
+  <mat-card-title> {{ piezas.nombre }}</mat-card-title>
+  <mat-card-subtitle> {{ piezas.precio }}</mat-card-subtitle>
+  <mat-card-actions align="end">
+    <button mat-fab color="primary" (click)="eliminar(piezas._id)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

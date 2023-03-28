@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+html,
+body {
+  height: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url('assets/imagenes/wave-haikei.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#formulario {
+  display: flex;
+  justify-content: center;
+  background-color: bisque;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 2px 2px 5px #888;
+  margin: 0 auto;
+  height: 300px;
+}
+
+#insertarPieza {
+  display: flex;
+  justify-content: center;
+  background-color: bisque;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 2px 2px 5px #888;
+  margin: 0 auto;
+  height: 300px;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+}
+
+h1 {
+  color: white;
+}
+
+@media (max-height: 500px) {
+
+  /* Si la altura de la ventana es menor a 500px, reduce la altura del footer */
+  #footer {
+    line-height: 40px;
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 5px 9px 4px rgba(0, 0, 0, 0.5);
+}
+
+
